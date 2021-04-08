@@ -1,0 +1,45 @@
+.card__container {
+  margin: 2rem;
+
+  .card__type {
+    &-title {
+      color: $color-white;
+      font-size: 3rem;
+      font-family: $font-big-shoulders;
+      text-transform: uppercase;
+      margin: 28px 0;
+    }
+
+    &-text {
+      color: $color-white;
+      font-size: $default-font-size;
+      font-family: $font-lexend;
+      line-height: 1.5;
+      margin-top: unset;
+      margin-bottom: 20px;
+    }
+
+    &-sedan {
+      border-radius: 10px 10px 0 0;
+      padding: 4rem;
+      background-color: $color-bright-orange;
+    }
+    &-suv {
+      padding: 4rem;
+      background-color: $color-dark-cyan;
+    }
+    &-luxury {
+      border-radius: 0 0 10px 10px;
+      padding: 4rem;
+      background-color: $color-very-dark-cyan;
+    }
+    &-button {
+      color: $color-bright-orange;
+      background-color: $color-lightgray-background;
+      border-radius: 4rem;
+      border: none;
+      padding: 12px 24px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.card__container {
+  margin: 2rem;
+}
+
+.card__container .card__type-title {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 3rem;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin: 28px 0;
+}
+
+.card__container .card__type-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.5;
+  margin-top: unset;
+  margin-bottom: 20px;
+}
+
+.card__container .card__type-sedan {
+  border-radius: 10px 10px 0 0;
+  padding: 4rem;
+  background-color: #e38826;
+}
+
+.card__container .card__type-suv {
+  padding: 4rem;
+  background-color: #006970;
+}
+
+.card__container .card__type-luxury {
+  border-radius: 0 0 10px 10px;
+  padding: 4rem;
+  background-color: #004241;
+}
+
+.card__container .card__type-button {
+  color: #e38826;
+  background-color: #f2f2f2;
+  border-radius: 4rem;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  font-size: 1.5rem;
+  color: #3e52a3;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+/*# sourceMappingURL=main.css.map */
