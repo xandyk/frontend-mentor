@@ -36,13 +36,49 @@
   background-color: #004241;
 }
 
-.card__container .card__type-button {
-  color: #e38826;
-  background-color: #f2f2f2;
+.card__container button {
   border-radius: 4rem;
   border: none;
-  padding: 12px 24px;
+  padding: 12px 38px;
   cursor: pointer;
+}
+
+.card__container .card__button-sedans {
+  color: #e38826;
+}
+
+.card__container .card__button-suvs {
+  color: #006970;
+}
+
+.card__container .card__button-luxury {
+  color: #004241;
+}
+
+@media only screen and (min-width: 1440px) {
+  .card__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .card__container .card__type-sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  .card__container .card__type-luxury {
+    border-radius: 0 10px 10px 0;
+  }
+  section {
+    width: 29rem;
+    min-height: 500px;
+  }
+  button {
+    position: relative;
+    top: 113px;
+  }
 }
 
 .attribution {
