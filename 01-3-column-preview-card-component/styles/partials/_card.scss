@@ -1,76 +1,108 @@
 .card__container {
-  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+
+  section {
+    min-height: 40rem;
+    align-self: center;
+  }
 
   .card__type {
     &-title {
-      color: $color-white;
+      color: $color-white-title;
       font-size: 3rem;
       font-family: $font-big-shoulders;
       text-transform: uppercase;
-      margin: 28px 0;
+      margin: 2.8rem 0;
     }
-
     &-text {
-      color: $color-white;
+      color: $color-white-text;
       font-size: $default-font-size;
       font-family: $font-lexend;
-      line-height: 1.5;
+      font-weight: 300;
+      line-height: 1.8;
       margin-top: unset;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
 
     &-sedan {
       border-radius: 10px 10px 0 0;
-      padding: 4rem;
+      padding: 3rem;
       background-color: $color-bright-orange;
     }
     &-suv {
-      padding: 4rem;
+      padding: 3rem;
       background-color: $color-dark-cyan;
     }
     &-luxury {
       border-radius: 0 0 10px 10px;
-      padding: 4rem;
+      padding: 3rem;
       background-color: $color-very-dark-cyan;
     }
   }
-  button {
+  .btn {
     border-radius: 4rem;
     border: none;
-    padding: 12px 38px;
+    padding: 1.1rem 3rem;
+    font-size: 1rem;
     cursor: pointer;
   }
-  .card__button-sedans {
+  .sedans {
     color: $color-bright-orange;
   }
-  .card__button-suvs {
+  .suvs {
     color: $color-dark-cyan;
   }
-  .card__button-luxury {
+  .luxury {
     color: $color-very-dark-cyan;
   }
 }
+.attribution,
+span {
+  font-size: 12px;
+  font-family: $font-lexend;
+}
+span {
+  color: $color-bright-orange;
+}
+a {
+  color: $color-very-dark-cyan;
+}
 
 @include huge {
-  .card__container {
+  main {
     display: flex;
-    flex-direction: row;
-
-    .card__type-sedan {
-      border-radius: 10px 0 0 10px;
-    }
-
-    .card__type-luxury {
-      border-radius: 0 10px 10px 0;
-    }
+    align-items: center;
   }
+
   section {
-    width: 29rem;
-    min-height: 500px;
+    height: 45rem;
   }
 
-  button {
-    position: relative;
-    top: 113px;
+  .card__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+
+    .btn {
+      padding: 1rem 2.5rem;
+      font-size: 1rem;
+    }
+
+    .card__type {
+      &-text {
+        margin-bottom: 8.2rem;
+      }
+      &-sedan {
+        border-radius: 10px 0 0 10px;
+      }
+      &-luxury {
+        border-radius: 0 10px 10px 0;
+      }
+    }
   }
 }

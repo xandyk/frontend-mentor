@@ -4,10 +4,12 @@ $color-dark-cyan: hsl(184, 100%, 22%);
 $color-very-dark-cyan: hsl(179, 100%, 13%);
 
 // Neutral
-$color-white: hsla(0, 0%, 100%, 0.75);
+$color-white-title: hsl(0, 0%, 100%);
+$color-white-text: hsla(0, 0%, 100%, 0.75);
 $color-lightgray-background: hsl(0, 0%, 95%);
 
 // Typography
 $font-lexend: "Lexend Deca", sans-serif;
+
 $font-big-shoulders: "Big Shoulders Display", cursive;
 $default-font-size: 1.5rem;

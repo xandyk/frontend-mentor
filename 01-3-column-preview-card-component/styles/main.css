@@ -1,83 +1,133 @@
 .card__container {
-  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1.5rem;
+}
+
+.card__container section {
+  min-height: 40rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .card__container .card__type-title {
-  color: rgba(255, 255, 255, 0.75);
+  color: white;
   font-size: 3rem;
   font-family: "Big Shoulders Display", cursive;
   text-transform: uppercase;
-  margin: 28px 0;
+  margin: 2.8rem 0;
 }
 
 .card__container .card__type-text {
   color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
   font-family: "Lexend Deca", sans-serif;
-  line-height: 1.5;
+  font-weight: 300;
+  line-height: 1.8;
   margin-top: unset;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .card__container .card__type-sedan {
   border-radius: 10px 10px 0 0;
-  padding: 4rem;
+  padding: 3rem;
   background-color: #e38826;
 }
 
 .card__container .card__type-suv {
-  padding: 4rem;
+  padding: 3rem;
   background-color: #006970;
 }
 
 .card__container .card__type-luxury {
   border-radius: 0 0 10px 10px;
-  padding: 4rem;
+  padding: 3rem;
   background-color: #004241;
 }
 
-.card__container button {
+.card__container .btn {
   border-radius: 4rem;
   border: none;
-  padding: 12px 38px;
+  padding: 1.1rem 3rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-.card__container .card__button-sedans {
+.card__container .sedans {
   color: #e38826;
 }
 
-.card__container .card__button-suvs {
+.card__container .suvs {
   color: #006970;
 }
 
-.card__container .card__button-luxury {
+.card__container .luxury {
+  color: #004241;
+}
+
+.attribution,
+span {
+  font-size: 12px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+span {
+  color: #e38826;
+}
+
+a {
   color: #004241;
 }
 
 @media only screen and (min-width: 1440px) {
-  .card__container {
+  main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section {
+    height: 45rem;
+  }
+  .card__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 3rem;
+  }
+  .card__container .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+  .card__container .card__type-text {
+    margin-bottom: 8.2rem;
   }
   .card__container .card__type-sedan {
     border-radius: 10px 0 0 10px;
   }
   .card__container .card__type-luxury {
     border-radius: 0 10px 10px 0;
-  }
-  section {
-    width: 29rem;
-    min-height: 500px;
-  }
-  button {
-    position: relative;
-    top: 113px;
   }
 }
 
@@ -90,14 +140,14 @@
   color: #3e52a3;
 }
 
-html,
 body {
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
-  min-height: 100%;
+  height: 100%;
 }
 
 h1,
