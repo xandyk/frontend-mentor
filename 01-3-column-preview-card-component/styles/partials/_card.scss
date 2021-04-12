@@ -6,7 +6,7 @@
   margin: 1.5rem;
 
   section {
-    min-height: 40rem;
+    min-height: 30rem;
     align-self: center;
   }
 
@@ -19,27 +19,29 @@
       margin: 2.8rem 0;
     }
     &-text {
+      min-height: 14rem;
       color: $color-white-text;
       font-size: $default-font-size;
       font-family: $font-lexend;
       font-weight: 300;
       line-height: 1.8;
+      letter-spacing: 1px;
       margin-top: unset;
       margin-bottom: 2rem;
     }
 
     &-sedan {
       border-radius: 10px 10px 0 0;
-      padding: 3rem;
+      padding: 5rem;
       background-color: $color-bright-orange;
     }
     &-suv {
-      padding: 3rem;
+      padding: 5rem;
       background-color: $color-dark-cyan;
     }
     &-luxury {
       border-radius: 0 0 10px 10px;
-      padding: 3rem;
+      padding: 5rem;
       background-color: $color-very-dark-cyan;
     }
   }
