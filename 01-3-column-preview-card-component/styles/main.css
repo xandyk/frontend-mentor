@@ -119,11 +119,11 @@ a {
     margin: 3rem;
   }
   .card__container .btn {
-    padding: 1rem 2.5rem;
-    font-size: 1rem;
+    padding: 1rem 3.2rem;
+    font-size: 1.2rem;
   }
   .card__container .card__type-text {
-    min-height: 21.7rem;
+    min-height: 17.7rem;
   }
   .card__container .card__type-sedan {
     border-radius: 10px 0 0 10px;
