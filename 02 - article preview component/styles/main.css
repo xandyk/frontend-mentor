@@ -1,0 +1,101 @@
+main {
+  margin: 2rem;
+}
+
+.hero {
+  background: url("/02 - article preview component/images/drawers.jpg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 22vh;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.content,
+.author {
+  background-color: #fff;
+  font-family: "Manrope", sans-serif;
+  padding: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+}
+
+.content-heading,
+.author-heading {
+  font-size: 1.5rem;
+  color: #48556a;
+  font-weight: 500;
+}
+
+.content-body,
+.author-body {
+  font-size: 1.3rem;
+  color: #6d7f97;
+  font-weight: 400;
+}
+
+.share {
+  background-color: #48556a;
+  height: 4rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.share-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  font-size: 1rem;
+  color: #9eafc2;
+  text-transform: uppercase;
+}
+
+.author {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.author-avatar {
+  width: 25%;
+  height: 25%;
+  border-radius: 25%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ecf2f8;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+/*# sourceMappingURL=main.css.map */
